@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-const { API_MAIL } = process.env;
 
 const allowCors = (fn) => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
@@ -31,7 +30,7 @@ const handler = (req, res) => {
         host: "smtp-relay.gmail.com",
         port: 587,
         auth: {
-          user: { API_MAIL },
+          user: process.env.API_MAIL,
           pass: "@password123",
         },
       });
