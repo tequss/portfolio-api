@@ -31,7 +31,7 @@ const handler = (req, res) => {
         port: 587,
         auth: {
           user: process.env.API_MAIL,
-          pass: "@password123",
+          pass: process.env.API_MAIL_PASSWORD,
         },
       });
       
