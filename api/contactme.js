@@ -30,7 +30,7 @@ const handler = (req, res) => {
         host: "smtp-relay.gmail.com",
         port: 587,
         auth: {
-          user: "process.env.API_MAIL",
+          user: "env.API_MAIL",
           pass: "@password123",
         },
       });
