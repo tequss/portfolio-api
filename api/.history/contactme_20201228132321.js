@@ -3,7 +3,6 @@ const nodemailer = require('nodemailer');
 const allowCors = (fn) => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Origin', 'https://wk-dev.pl');
   // another option
   // res.setHeader('Access-Control-Allow-Origin', req.header.origin);
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
